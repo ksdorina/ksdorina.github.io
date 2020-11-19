@@ -15,18 +15,36 @@
     <title>Téglalap területe, kerülete</title>
 </head>
 <body style="background-image: url('hatter.jpg');">
-    <h1 style="text-align: center;">Téglalap területe, kerülete</h1>
+    <h1 style="text-align: center; font-family: monospace; color: purple;">Téglalap területe, kerülete</h1>
 
-
+    <br>
     <div class="row">
-        <div class="col-sm-3" style="text-align: center;"><span>a oldal:</span></div>
-        <div class="col-sm-3"><input type="text" id="a"></div>
-        <div class="col-sm-3" style="text-align: center;"><span>b oldal:</span></div>
-        <div class="col-sm-3"><input type="text" id="b"></div>
+        <div class="col-sm-6" style="text-align: right; font-family: monospace; font-size: 20px; color:red;"><span>a oldal:</span></div>
+        <div class="col-sm-6"><input type="text" id="a"></div>
     </div>
+    <div class="row">
+        <div class="col-sm-6" style="text-align: right; font-family: monospace; font-size: 20px; color:red;"><span>b oldal:</span></div>
+        <div class="col-sm-6"><input type="text" id="b"></div>
+    </div>
+    <br>
+    <button onclick="osszeadas()" class="btn btn-primary" style="margin: auto; display: block; font-family: monospace; font-size: 20px; color: lightcyan;">A téglalap kerületének és területének kiszámítása</button>
+    
+    <br>
+    <p style="text-align: center; font-family: monospace; font-size: 20px; color: red;">A téglalap területe: <span id="kimenet"></span></p>
+    <p style="text-align: center; font-family: monospace; font-size: 20px; color: red;">A téglalap kerülete: <span id="kerulet"></span></p>
+    <script>
+        function osszeadas()
+        {
+            var a = document.getElementById("a").value;
+            var b = document.getElementById("b").value;
+            var terulet = parseInt(a)*parseInt(b);
+            document.getElementById("kimenet").innerHTML = terulet;
 
-    
-    
+            var kerulet1 = parseInt(a)+parseInt(b);
+            var kerulet2 = kerulet1*2;
+            document.getElementById("kerulet").innerHTML = kerulet2;
+        }
+    </script>
     
 </body>
 </html>
