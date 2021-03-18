@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmek táblázat</title>
+    <script src="movies.js"></script>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="korona.js"></script>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <style>
+        h1
+        {
+            text-align: center;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .table-striped>tbody>tr:nth-child(odd)>td
+        {
+            background-color: rgb(162, 219, 252);
+        }
+        .table
+        {
+            background-color: rgb(132, 210, 255);
+        }
+        body
+        {
+            background-color:rgb(183, 241, 252);
+        }
+        p
+        {
+            text-align: center;
+            font-family:Verdana, Geneva, Tahoma, sans-serif
+        }
+        .navbar
+        {
+            background-color: rgb(132, 210, 255);
+        }
+    </style>
+    
+    <div class="container">
+        <header>
+            <h1>Top 100 IMDB filmek rangsorolása</h1>
+            <p>2014-es adatok</p>
+               </header>
+
+               <nav class="navbar navbar-expand-md navbar-default">
+            
+          
+                <!-- Toggler/collapsibe Button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html">Táblázatos forma</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="index2.html">Keretes forma</a>
+                    </li>
+                   
+                  </ul>
+                </div>
+              </nav>
+        <table class="table table-primary table-striped">
+            <thead>
+              <tr>
+                <th>Film címe</th>
+                <th>IMDB helyezés</th>
+                <th>Film ID</th>
+              </tr>
+            </thead>
+            <tbody id="ide">
+              
+            </tbody>
+          </table>       
+      </div>
+
+ 
+
+
+
+
+<div id="ide"></div>
+<script>
+fetch("https://raw.githubusercontent.com/hjorturlarsen/IMDB-top-100/master/data/movies.json")
+.then(x => x.json())
+.then(y => megjelenit(y));
+
+
+function megjelenit(adatok){
+
+    console.log(adatok);
+
+    var szoveg="";
+
+    for (elem of adatok){
+        //szoveg+=elem.date;
+
+        szoveg+='<tr>';
+        szoveg+='<td>'+elem.title+   '</td>';
+        szoveg+='<td>'+elem.rank+'</td>';
+        szoveg+='<td>'+elem.id+'</td>';
+         
+        szoveg+='</tr>';
+    }
+    document.getElementById("ide").innerHTML=szoveg;
+
+
+
+
+
+}
+
+</script>
+    
+</body>
+</html>
