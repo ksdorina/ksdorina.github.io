@@ -1,0 +1,21 @@
+Két ország kódját bekérjük és a millió fõre esõ halálozást megjelenítjük diagramon.
+Ha az országkódot üresen hagyjuk, hibaüzenetet ír!
+
+Covid adatok:
+https://covid.ourworldindata.org/data/owid-covid-data.json
+Adatok lekérdezéséhez: gugliba: w3 fetch
+Diagram rajzoláshoz: gugliba: plotly js, bacis lis chart-ot-vonaldiagramot rajzolunk
+Plotly telepítéséhez: gugliba: plotly js npm
+
+
+
+npm init -y
+npm install bootstrap
+npm install plotly.js-dist
+
+
+index.html és alap.js megírása
+
+
+
+

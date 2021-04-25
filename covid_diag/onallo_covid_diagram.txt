@@ -1,0 +1,4 @@
+
+1. Kérd be egy harmadik ország kódját!
+2. A diagramon harmadik vonalként jelenítse meg a plotly!
+3. Ha üresen hagyjuk a 3. ország kódját, arra is menjen a hibaüzenet!
