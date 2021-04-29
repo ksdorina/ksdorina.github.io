@@ -1,0 +1,6 @@
+
+1. Tegyél be új menüpontot, index4.html és alap4.js tartozzon hozzá!
+2. Véletlenszerûen sorsold ki ország számát, írd ki nevét, zászlóját!
+3. Beviteli mezõben megtippelhetjük a népességét! 
+4. Gombra, ha 10%-on belül vagyunk gratuláljon, írja ki a jót!
+5. Menüt nézd át, mindenhol mûködjön!
