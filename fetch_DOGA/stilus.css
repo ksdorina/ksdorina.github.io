@@ -1,0 +1,40 @@
+header{
+    background-image: url("hatter.jpg");
+    height: 150px;
+    text-align: center;
+}
+.kek{
+    color: blue;
+    font-weight: bold;
+    margin: 10px;
+}
+.arnyekolt{
+    color:blueviolet;
+    box-shadow: 2px 2px black;
+    margin: 5px;
+    padding: 2px;
+}
+
+.zold
+{
+    background-color: blueviolet;
+    font-style: italic;
+
+}
+
+.keret
+{
+    border: 2px solid green;
+    background-color: cadetblue;
+}
+
+#vicc
+{
+    text-align: center;
+}
+
+.piros
+{
+    background-color: crimson;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
