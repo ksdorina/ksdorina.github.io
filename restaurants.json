@@ -1,0 +1,99 @@
+var adatok =
+[  
+    {  
+        "name":"The Savoy Grill",
+        "cuisine":"London, The Strand",
+        "year":"2010",
+		"stars":"-"
+    },
+    {  
+        "name":"Gordon Ramsay",
+        "cuisine":"London, Royal Hospital Road",
+        "year":"1998",
+		"stars":"3"
+    },
+    {  
+        "name":"Gordon Ramsay at Claridge's",
+        "cuisine":"London Brook Street , W1K 4HR",
+        "year":"2001",
+		"stars":"1"
+    },
+    {  
+        "name":"Pétrus",
+        "cuisine":"London, Kinnerton Street 1, SW1",
+        "year":"2009",
+		"stars":"2"
+    },
+    {  
+        "name":"The Boxwood Café",
+        "cuisine":"London, The Berkeley, Wilton Place Knightsbridge, SW1X 7RL",
+        "year":"2003",
+		"stars":"-"
+    },
+    {  
+        "name":"Lucky Cat",
+        "cuisine":"London, Grosvenor Square 10/13, W1K 6JP",
+        "year":"2019",
+		"stars":"1"
+    },
+    {  
+        "name":"Plane Food",
+        "cuisine":"Heathrow Airport Terminal 5",
+        "year":"2003",
+		"stars":"-"
+    },
+    {  
+        "name":"York & Albany",
+        "cuisine":"London, Parkway",
+        "year":"2008",
+		"stars":"-"
+    },
+    {  
+        "name":"Murano",
+        "cuisine":"London, 20 Queen Street, W1J 5PR",
+        "year":"2008",
+		"stars":"1"
+    },
+    {  
+        "name":"Le Trianon",
+        "cuisine":"France, Versailles",
+        "year":"2008",
+		"stars":"-"
+    },
+    {  
+        "name":"Castel Monastero",
+        "cuisine":"Italy, Tuscany, Monastero d’Ombrone",
+        "year":"2009",
+		"stars":"-"
+    },
+    {  
+        "name":"La Veranda",
+        "cuisine":"France, Versailles, 1 Boulevard de la Reine",
+        "year":"2008",
+		"stars":"-"
+    },
+    {  
+        "name":"Gordon Ramsay at Forte Village",
+        "cuisine":"Italy, Cagliari Sardinia, Forte Villa Resort S.r.l. Santa Margherita di Pula",
+        "year":"2009",
+		"stars":"-"
+    },
+    {  
+        "name":"Gordon Ramsay at Powerscourt",
+        "cuisine":"Ireland, Enniskerry, Powerscourt Estate",
+        "year":"2007",
+		"stars":"-"
+    },
+    {  
+        "name":"Gordon Ramsay at The London",
+        "cuisine":"New York, West 54th Street",
+        "year":"2006",
+		"stars":"2"
+    },
+    {  
+        "name":"Gordon Ramsay at The London West Hollywood",
+        "cuisine":"West Hollywood, N. San Vicente Boulevard",
+        "year":"2008",
+		"stars":"1"
+    }
+]
