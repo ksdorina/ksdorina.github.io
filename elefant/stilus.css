@@ -1,0 +1,25 @@
+.kep{
+    height: 150px;
+    
+}
+
+p{
+    font-size: 18px;
+}
+.link{
+    margin-top: 20px;
+}
+
+.cim
+{
+    text-align: center;
+}
+
+.tablazat
+{
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    background-color: pink;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
