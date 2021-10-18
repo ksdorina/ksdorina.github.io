@@ -1,11 +1,13 @@
 
 .kep{
     height: 100px;
+    box-shadow: 6px 10px #505050;
 }
 
 .nev
 {
     color: powderblue;
+    text-transform: uppercase;
 }
 
 p{
